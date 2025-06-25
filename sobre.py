@@ -1,5 +1,4 @@
 import streamlit as st
-from PIL import Image
 from cabecalho import cria_cabecalho
 from componentes import contact_style, sobre_link
 
@@ -11,8 +10,7 @@ def sobre_mim():
     
     with col1:
         # Imagem de perfil (opcional)
-        image = Image.open('images/kawan.jpeg')  # substitua pelo caminho da imagem
-        st.image(image, width=250)
+        st.image("images/kawan.jpeg" ,use_column_width=True)
     
     with col2:
         # Informações básicas
