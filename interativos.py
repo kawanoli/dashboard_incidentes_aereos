@@ -1,7 +1,7 @@
 import streamlit as st
 from cabecalho import cria_cabecalho
 
-def graficos_interativos():
+def mostra_graficos_interativos():
     cria_cabecalho()
 
     st.markdown('<a name="grafint"></a>', unsafe_allow_html=True)

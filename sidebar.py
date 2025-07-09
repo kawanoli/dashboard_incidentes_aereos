@@ -9,7 +9,7 @@ from componentes import sidebar_style
 
 def menu_lateral():
     # Menu lateral
-    st.sidebar.image("images/dca.png", caption="Departamento de Engenharia da Computação e Automação", use_column_width=True)
+    st.sidebar.image("images/dca.png", caption="Departamento de Engenharia da Computação e Automação", use_container_width=True)
     #st.sidebar.markdown(sidebar_logo(), unsafe_allow_html=True)
     st.sidebar.title("Menu")
     opcao = st.sidebar.selectbox("Selecione a página a ser vista", ["Página Inicial", "Material e Métodos", "Estudo", "Gráficos Interativos", "Predição", "Sobre o Autor"])

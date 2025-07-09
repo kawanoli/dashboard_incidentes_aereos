@@ -5,7 +5,7 @@ from componentes import remove_espaco_sup
 def cria_cabecalho():
     remove_espaco_sup()
 
-    st.image("images/aviao2.jpg" ,use_column_width=True)
+    st.image("images/aviao2.jpg" ,use_container_width=True)
     st.markdown(
         "<h1 style='text-align: center;'>Estudo de falhas em aeronaves no espaço aéreo brasileiro</h1>",
         unsafe_allow_html=True

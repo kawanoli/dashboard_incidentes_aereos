@@ -10,7 +10,7 @@ def sobre_mim():
     
     with col1:
         # Imagem de perfil (opcional)
-        st.image("images/kawan.jpeg" ,use_column_width=True)
+        st.image("images/kawan.jpeg" ,use_container_width=True)
     
     with col2:
         # Informações básicas

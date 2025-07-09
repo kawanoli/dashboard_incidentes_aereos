@@ -4,7 +4,7 @@ from cabecalho import cria_cabecalho
 def pagina_inicial():
     cria_cabecalho()
     
-    st.image("images/aviao_pag_ini.jpg", caption="\"A vitória pertence aquele que acredita nela, e aquele que acredita nela por mais tempo.\" ~Pearl Harbor" ,use_column_width=True)
+    st.image("images/aviao_pag_ini.jpg", caption="\"A vitória pertence aquele que acredita nela, e aquele que acredita nela por mais tempo.\" ~Pearl Harbor" ,use_container_width=True)
 
     st.markdown('<a name="introducao"></a>', unsafe_allow_html=True)
     st.markdown("## Introdução")
