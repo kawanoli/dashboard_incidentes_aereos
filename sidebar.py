@@ -2,6 +2,8 @@ import streamlit as st
 from paginainicial import pagina_inicial
 from matmet import material_metodos
 from estudo import resultado_estudos
+from interativos import graficos_interativos
+from predicao import *
 from sobre import sobre_mim
 from componentes import sidebar_style
 
@@ -10,7 +12,7 @@ def menu_lateral():
     st.sidebar.image("images/dca.png", caption="Departamento de Engenharia da Computação e Automação", use_column_width=True)
     #st.sidebar.markdown(sidebar_logo(), unsafe_allow_html=True)
     st.sidebar.title("Menu")
-    opcao = st.sidebar.selectbox("Selecione a página a ser vista", ["Página Inicial", "Material e Métodos", "Estudo", "Sobre o Autor"])
+    opcao = st.sidebar.selectbox("Selecione a página a ser vista", ["Página Inicial", "Material e Métodos", "Estudo", "Gráficos Interativos", "Predição", "Sobre o Autor"])
 
     if opcao == "Página Inicial":
         sidebar_style([
@@ -50,6 +52,19 @@ def menu_lateral():
         ("Conclusões da análise","conclusoes"),
         ])
         resultado_estudos()
+
+    elif opcao == "Gráficos Interativos":
+        sidebar_style([
+        ("Gráficos Interativos", "grafint"),
+        ("Notebook no Colab", "colablink"),
+        ])
+        graficos_interativos()
+
+    elif opcao == "Predição":
+        sidebar_style([
+        ("Predição com Aprendizado de Máquina", "predict"),
+        ])
+        tela_predicao()
 
     elif opcao == "Sobre o Autor":
         sobre_mim()

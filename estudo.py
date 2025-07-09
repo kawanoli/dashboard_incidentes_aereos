@@ -1,6 +1,6 @@
 import streamlit as st
 from cabecalho import cria_cabecalho
-from graficos import *
+from graficos_interativos import *
 
 def resultado_estudos():
     cria_cabecalho()
