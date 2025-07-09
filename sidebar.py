@@ -2,7 +2,7 @@ import streamlit as st
 from paginainicial import pagina_inicial
 from matmet import material_metodos
 from estudo import resultado_estudos
-from interativos import graficos_interativos
+from interativos import mostra_graficos_interativos
 from predicao import *
 from sobre import sobre_mim
 from componentes import sidebar_style
@@ -58,7 +58,7 @@ def menu_lateral():
         ("Gráficos Interativos", "grafint"),
         ("Notebook no Colab", "colablink"),
         ])
-        graficos_interativos()
+        mostra_graficos_interativos()
 
     elif opcao == "Predição":
         sidebar_style([
