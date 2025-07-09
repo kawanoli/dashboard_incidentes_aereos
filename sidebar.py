@@ -2,8 +2,8 @@ import streamlit as st
 from paginainicial import pagina_inicial
 from matmet import material_metodos
 from estudo import resultado_estudos
-from interativos import mostra_graficos_interativos
-from predicao import *
+from interativos import *
+from predicao import tela_predicao
 from sobre import sobre_mim
 from componentes import sidebar_style
 
