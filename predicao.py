@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
 from cabecalho import cria_cabecalho
-from model import *
 
 def tela_predicao():
     cria_cabecalho()
@@ -143,7 +142,9 @@ Com isso, conseguimos observar, por exemplo:
 Essa forma de apresentação é especialmente útil quando o modelo precisa ser avaliado não só pela sua precisão global, mas também pela fidelidade com que trata cada tipo de ocorrência individualmente, algo fundamental em cenários de risco, onde uma classificação errada pode ter implicações sérias.
         """
     )
-    plot_mat_conf_norm()
+    caminho_imagem = 'images/matconfnorm.png'
+    imagem = Image.open(caminho_imagem)
+    st.image(imagem, use_container_width=True)
 
     st.markdown('<a name="impmatnorm"></a>', unsafe_allow_html=True)
     st.markdown("## Por que isso é importante para o nosso estudo?")
@@ -168,7 +169,9 @@ Dentro do modelo Random Forest, a importância de uma variável é medida com ba
 Cada vez que uma variável é usada para dividir os dados em uma árvore, e essa divisão melhora a pureza dos grupos resultantes (ou seja, reduz a mistura entre classes), essa variável ganha “crédito”. Ao fim do treinamento, somamos esse crédito em todas as árvores, o que nos dá uma medida quantitativa de importância relativa de cada atributo.
         """
     )
-    plot_imp_feat()
+    caminho_imagem = 'images/impfeat.png'
+    imagem = Image.open(caminho_imagem)
+    st.image(imagem, use_container_width=True)
 
     st.markdown('<a name="relevfeat"></a>', unsafe_allow_html=True)
     st.markdown("## Por que isso é relevante para o nosso estudo?")
