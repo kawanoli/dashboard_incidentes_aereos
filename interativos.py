@@ -13,28 +13,37 @@ def mostra_graficos_interativos():
     )
     st.markdown('<a name="colablink"></a>', unsafe_allow_html=True)
     st.markdown("## Notebook no Colab")
-    st.markdown(
-        """
-        Segue aqui o link para acesso do mesmo:
-        <a href="https://colab.research.google.com/drive/1-yp7rRLk2yB2C9mB9kRxvfQnkfWmapmh?usp=sharing" target="_blank">
-        <button style="
-            background-color:#4285F4;
-            color:white;
-            padding:10px 20px;
-            border:none;
-            border-radius:5px;
-            text-align:center;
-            text-decoration:none;
-            display:inline-block;
-            font-size:16px;
-            margin-top:10px;
-            cursor:pointer;">
-            Abrir no Google Colab 🚀
-        </button>
-        </a>
+    col1, col2, col3 = st.columns([1, 2, 1])
+    with col2:
+        st.markdown(
+            """
+            <div style='text-align: center;'>
+            <p>Segue aqui o link para acesso do mesmo:</p>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
+        st.markdown(
+            """
+        <div style='text-align: center;'>
+            <a href="https://colab.research.google.com/drive/1-yp7rRLk2yB2C9mB9kRxvfQnkfWmapmh?usp=sharing" target="_blank">
+                <button style="
+                    background-color:#4285F4;
+                    color:white;
+                    padding:10px 20px;
+                    border:none;
+                    border-radius:5px;
+                    font-size:16px;
+                    cursor:pointer;">
+                    Abrir no Google Colab 🚀
+                </button>
+            </a>
+        </div>
+
+        <br><br>
         """,
-        unsafe_allow_html=True
-    )
+            unsafe_allow_html=True
+        )
 
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:

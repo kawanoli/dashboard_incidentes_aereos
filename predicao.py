@@ -188,3 +188,25 @@ Cada vez que uma variável é usada para dividir os dados em uma árvore, e essa
 Além disso, esse tipo de análise pode ser um ponto de partida para refinar o modelo, seja através da remoção de variáveis pouco informativas, seja pelo aprofundamento em variáveis altamente relevantes, talvez criando novas features derivadas delas.
         """
     )
+
+    st.markdown('<a name="concs"></a>', unsafe_allow_html=True)
+    st.markdown("## Conclusões")
+    st.markdown(
+        """
+        Ao longo deste trabalho, buscamos explorar de forma sistemática e fundamentada a pergunta central que orienta nossa investigação: “É possível prever acidentes aéreos utilizando aprendizado de máquina?”. Essa pergunta nos levou por uma jornada que combinou aspectos técnicos, operacionais e conceituais.
+
+        Desde o início, reconhecemos que prever acidentes aéreos não é uma tarefa simples, tampouco exata. Estamos lidando com eventos raros, que muitas vezes dependem de fatores imprevisíveis ou contextuais. Porém, a proposta do estudo nunca foi alcançar uma previsão determinística ou infalível. Nosso foco esteve em detectar padrões e tendências que, com apoio de algoritmos de machine learning, pudessem indicar níveis de risco ou potenciais sinais de alerta.
+
+A modelagem preditiva, nesse contexto, se mostrou uma ferramenta complementar, que não substitui o julgamento técnico ou a investigação operacional, mas pode contribuir com análises antecipadas e suporte à tomada de decisão.
+
+A utilização do LazyClassifier nos permitiu testar rapidamente uma gama variada de modelos supervisionados e comparar seu desempenho sob uma mesma base de critérios. Foi a partir dessa triagem inicial que emergiu o Random Forest como o modelo com os melhores resultados em métricas como acurácia, F1-score e recall.
+
+Esse resultado nos levou a uma análise mais aprofundada e individual do Random Forest, que confirmou sua robustez, estabilidade e capacidade de generalização mesmo em um contexto com certo desequilíbrio entre classes. A explicabilidade do modelo (por meio da matriz de confusão e da importância das features) também se mostrou um diferencial importante.
+
+Em síntese, os resultados aqui apresentados apontam que é possível, sim, aplicar modelos de aprendizado de máquina para prever padrões de risco na aviação civil, desde que com a devida cautela metodológica e respeito ao contexto operacional.
+
+Nosso modelo Random Forest se mostrou promissor para classificar a gravidade de ocorrências com base em dados históricos, e seu desempenho pode ser aprimorado com ajustes adicionais.
+
+Entretanto, é fundamental reforçar que modelos preditivos não substituem a análise de especialistas, mas podem atuar como instrumentos de apoio à segurança operacional, capazes de identificar tendências, priorizar investigações e antecipar cenários de risco.   
+        """
+    )

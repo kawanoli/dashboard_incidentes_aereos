@@ -63,6 +63,17 @@ def menu_lateral():
     elif opcao == "Predição":
         sidebar_style([
         ("Predição com Aprendizado de Máquina", "predict"),
+        ("Preparação dos Dados", "dataprep"),
+        ("Analisando os Modelos de Predição", "analisemodpred"),
+        ("Por que usar o LazyPredict?", "lazypred"),
+        ("Execução do LazyClassifier", "graflazy"),
+        ("Destrinchando o Random Forest", "randomfor"),
+        ("Treinamento Individual e Avaliação de Métricas", "treinrandom"),
+        ("Obtendo Matriz de Confusão Normalizada", "matconfnorm"),
+        ("Por que isso é importante para o nosso estudo?", "impmatnorm"),
+        ("Importância das Features", "impfeat"),
+        ("Por que isso é relevante para o nosso estudo?", "relevfeat"),
+        ("Conclusões", "concs"),
         ])
         tela_predicao()
 
